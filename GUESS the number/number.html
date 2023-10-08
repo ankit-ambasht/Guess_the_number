@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUESS THE NUMBER</title>
+    <style>
+        .wrapper{
+            display: block;
+            text-align: center;
+            padding: 100px 0;
+            width: 50%;
+            border: 2px solid green;
+            margin: auto;
+           background-color: grey;
+        }
+        #guess{
+            font-size: 30px;
+            color:purple;
+        }
+        #guessField{
+            padding: 10px;
+            border: 2px solid green;
+        }
+        #sub{
+            padding: 5px 10px;
+            background-color: blue;
+            border-radius: 5px;
+        }
+        p{
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form">
+        <label for="guess" id="guess">GUESS THE NUMBER</label>
+        <br />
+        <br />
+        <input type="text" id="guessField" name="guess" />
+        <br />
+        <br />
+        <input type="submit" id="sub" value="submit" />
+      </form>
+      <div class="resultParas">
+        <p>previous Guesses: <span class="guesses"></span></p>
+        <p>Guesses Remaining: <span class="lastResult">10</span></p>
+        <p class="lowOrHi"></p>
+      </div>
+    </div>
+    <script src="number.js"></script>
+  </body>
+</html>
